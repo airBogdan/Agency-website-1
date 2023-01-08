@@ -1,7 +1,7 @@
-import Facebook from "../../assets/facebook-square-brands.svg";
-import LinkedId from "../../assets/linkedin-brands.svg";
-import Twitter from "../../assets/twitter-square-brands.svg";
-import Instagram from "../../assets/instagram-square-brands.svg";
+// import Facebook from "../../assets/facebook-square-brands.svg";
+// import LinkedId from "../../assets/linkedin-brands.svg";
+// import Twitter from "../../assets/twitter-square-brands.svg";
+// import Instagram from "../../assets/instagram-square-brands.svg";
 import { useState } from "react";
 import styled from "styled-components";
 
@@ -36,25 +36,25 @@ const Title = styled.h1`
   }
 `;
 
-const Icons = styled.div`
-  display: flex;
-  margin-bottom: 3rem;
-  a {
-    &:hover {
-      img {
-        filter: invert(20%) sepia(100%) saturate(500%) hue-rotate(580deg)
-          brightness(100%) contrast(97%);
-      }
-    }
-    &:not(:last-child) {
-      margin-right: 2rem;
-    }
-    img {
-      width: 3rem;
-      height: 3rem;
-    }
-  }
-`;
+// const Icons = styled.div`
+//   display: flex;
+//   margin-bottom: 3rem;
+//   a {
+//     &:hover {
+//       img {
+//         filter: invert(20%) sepia(100%) saturate(500%) hue-rotate(580deg)
+//           brightness(100%) contrast(97%);
+//       }
+//     }
+//     &:not(:last-child) {
+//       margin-right: 2rem;
+//     }
+//     img {
+//       width: 3rem;
+//       height: 3rem;
+//     }
+//   }
+// `;
 
 const Form = styled.form`
   display: flex;

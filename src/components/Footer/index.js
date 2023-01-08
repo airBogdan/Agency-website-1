@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import Twitter from "../../assets/twitter-square-brands.svg";
-import Instagram from "../../assets/instagram-square-brands.svg";
-import Gmail from "../../assets/envelope-open-solid.svg";
+// import Twitter from "../../assets/twitter-square-brands.svg";
+// import Instagram from "../../assets/instagram-square-brands.svg";
+// import Gmail from "../../assets/envelope-open-solid.svg";
 
 const FOOTER = styled.footer`
   background-color: #0a0b10;
@@ -21,27 +21,27 @@ const FOOTER = styled.footer`
   }
 `;
 
-const RightText = styled.div`
-  color: var(--white);
-  display: flex;
-  align-items: center;
-  img {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-left: 1rem;
-    filter: invert(100%);
-    transition: all 0.2s ease-in-out;
-  }
-  a {
-    &:hover {
-      img {
-        transform: scale(1.5);
-        filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(216deg)
-          brightness(100%) contrast(97%);
-      }
-    }
-  }
-`;
+// const RightText = styled.div`
+//   color: var(--white);
+//   display: flex;
+//   align-items: center;
+//   img {
+//     width: 1.5rem;
+//     height: 1.5rem;
+//     margin-left: 1rem;
+//     filter: invert(100%);
+//     transition: all 0.2s ease-in-out;
+//   }
+//   a {
+//     &:hover {
+//       img {
+//         transform: scale(1.5);
+//         filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(216deg)
+//           brightness(100%) contrast(97%);
+//       }
+//     }
+//   }
+// `;
 const LeftText = styled.div`
   font-size: 12px;
   color: var(--white);
