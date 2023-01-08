@@ -22,14 +22,14 @@ const Headers = styled.header`
 `;
 
 const Logo = styled.a`
-  display: flex;
-  align-items: center;
-  width: 2rem;
+  // display: flex;
+  // align-items: center;
+  // width: 2rem;
   height: auto;
   cursor: pointer;
-  img {
-    margin-right: 0.5rem;
-  }
+  // img {
+  //   margin-right: 0.5rem;
+  // }
 `;
 
 const Nav = styled.nav`
@@ -159,7 +159,6 @@ const MobileMenu = styled.nav`
 `;
 const Header = () => {
   const [click, setClick] = useState(false);
-  //const handleClick = () => setClick(!click);
   const ref = useRef(null);
 
   gsap.registerPlugin(ScrollTrigger);
@@ -234,8 +233,8 @@ const Header = () => {
   return (
     <Headers ref={ref}>
       <Logo>
-        <img src={logo} alt="CodeBucks" />
-        <h3>CodeBucks</h3>
+        {/*<img src={logo} alt="CodeBucks" />*/}
+        <h3>BM Web Services</h3>
       </Logo>
       <Nav>
         <a href="#home" onClick={(e) => scrollUp("home", e)}>

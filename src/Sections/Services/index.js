@@ -342,11 +342,11 @@ const Services = () => {
       <Content ref={addToRefs}>
         <TextBlock
           topic="Develop"
-          title={<h1>We Develope high quality Web & App</h1>}
+          title={<h1>We develop high quality web sites & mobile apps</h1>}
           subText={
             <h5>
-              We build appropriate solution to develope your website & app with
-              best tools available
+                At our web development agency, we craft custom websites and apps using the latest technologies and
+                design principles to help your business stand out online and achieve its unique goals
             </h5>
           }
         />
@@ -362,7 +362,7 @@ const Services = () => {
           subText={
             <h5>
               Once your system is online, we will stay on hand to help you use
-              it and provide technical support and maintenance <br /> your
+              it and provide technical support and maintenance for your
               business
             </h5>
           }

@@ -4,6 +4,7 @@ import Instagram from "../../assets/instagram-square-brands.svg";
 import Gmail from "../../assets/envelope-open-solid.svg";
 
 const FOOTER = styled.footer`
+  background-color: #0a0b10;
   padding: 1.2rem calc(2.5rem + 2.5vw);
   font-size: 1rem;
   display: flex;
@@ -21,6 +22,7 @@ const FOOTER = styled.footer`
 `;
 
 const RightText = styled.div`
+  color: var(--white);
   display: flex;
   align-items: center;
   img {
@@ -41,31 +43,31 @@ const RightText = styled.div`
   }
 `;
 const LeftText = styled.div`
+  font-size: 12px;
+  color: var(--white);
   text-align: left;
 `;
+
+const Abc = styled.p`
+    margin-bottom: 10px;
+`;
+
 const Footer = () => {
   return (
     <FOOTER>
       <LeftText>
-        © 2021 Built and Design by{" "}
-        <a href="https://www.youtube.com/channel/UCeYt6blRBKuNrEg_-282fSA">
-          @CodeBucks
-        </a>
+        <Abc>Services are provided by:</Abc>
+        <div>
+          <p>BM Web Services Group SRL</p>
+          <p>Romania, Bucharest, 4th Sector</p>
+          <p>Boulevard Contantin Brancoveanu nr 116, room 1</p>
+          <p>Apartment building M2/III, 3rd entrance, 3rd floor, apartment 138</p>
+          <p>Unique ID number: 42910168</p>
+        </div>
       </LeftText>
-      <RightText>
-        Reach out to me via 😉
-        <a href="https://twitter.com/code_bucks">
-          <img src={Twitter} alt="Twitter" />
-        </a>
-        &nbsp;
-        <a href="https://www.instagram.com/code.bucks/">
-          <img src={Instagram} alt="Instagram" />
-        </a>
-        &nbsp;
-        <a href="mailto:codebucks27@gmail.com?subject=Email From Your Website">
-          <img src={Gmail} alt="Gmail" />
-        </a>
-      </RightText>
+      {/*<RightText>*/}
+      {/*  Reach out to me via*/}
+      {/*</RightText>*/}
     </FOOTER>
   );
 };

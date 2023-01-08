@@ -139,10 +139,9 @@ const About = () => {
             </Human>
 
             <Text>
-              We help our customers to tell about themselves, to grow and stand
-              out in an increasingly competitive digital world, through creative
-              projects that are able to attract and involve, creating strategic
-              value.
+              Welcome to our web development agency!
+              We specialize in creating custom, professional websites for individuals and businesses of all sizes.
+              Let us help you establish an online presence and grow your brand.
             </Text>
             <div>
               <Circle style={{ backgroundColor: "var(--purple)" }} />

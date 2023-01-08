@@ -173,6 +173,20 @@ const CTA = styled.button`
 `;
 
 const HeroSection = () => {
+  const scrollUp = (id, e) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "end",
+      inline: "nearest",
+    });
+  };
+
+  const handleClick = (id, e) => {
+    scrollUp(id, e);
+  };
+
   return (
     <HomeSection id="home">
       <Blobs>
@@ -195,9 +209,9 @@ const HeroSection = () => {
           </Topic>
           <Title>Transforming your digital presence</Title>
           <SubText>
-            we help fast growing companies build award winning websites
+            we help companies and individuals build great websites
           </SubText>
-          <CTA>
+          <CTA onClick={(e) => handleClick("contact", e)}>
             Get in touch &nbsp;
             <img src={arrow} alt="cta" width="100" height="100" />
           </CTA>

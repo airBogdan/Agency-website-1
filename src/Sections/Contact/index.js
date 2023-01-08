@@ -2,12 +2,13 @@ import Facebook from "../../assets/facebook-square-brands.svg";
 import LinkedId from "../../assets/linkedin-brands.svg";
 import Twitter from "../../assets/twitter-square-brands.svg";
 import Instagram from "../../assets/instagram-square-brands.svg";
+import { useState } from "react";
 import styled from "styled-components";
 
 const ContactSection = styled.section`
   width: 100vw;
   padding: calc(2.5rem + 2.5vw) 0;
-  background-color: #0a0b10;
+  // background-color: #0a0b10;
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
@@ -16,7 +17,8 @@ const ContactSection = styled.section`
 `;
 
 const Title = styled.h1`
-  color: var(--white);
+  // color: var(--white);
+  color: #0a0b10;
   display: inline-block;
   font-size: 2rem;
   margin-bottom: 3rem;
@@ -124,34 +126,44 @@ const Row = styled.div`
     }
   }
 `;
+
 const Contact = () => {
+  const [, setName] = useState('');
+  const [, setMail] = useState('');
+  const [, setMessage] = useState('');
+
+  function submitMessage () {
+    setTimeout(() => {
+      setName('');
+      setMail('');
+      setMessage('');
+      window.alert('Thank you, your message has been sent!')
+    }, 1500);
+  }
+
   return (
     <ContactSection id="contact">
       <Title>Get in touch</Title>
       {/* <Text>Lorem ipsum dolor sit amet, consectetur adipisicing.</Text> */}
-      <Icons>
-        <a href="https://www.facebook.com/">
-          {" "}
-          <img src={Facebook} alt="Facebook" />
-        </a>
-        <a href="https://www.linkedin.com//">
-          <img src={LinkedId} alt="LinkedId" />
-        </a>
-        <a href="https://twitter.com/">
-          <img src={Twitter} alt="Twitter" />
-        </a>
-        <a href="https://www.instagram.com/">
-          <img src={Instagram} alt="Instagram" />
-        </a>
-      </Icons>
+      {/*<Icons>*/}
+      {/*  <a href="https://www.facebook.com/">*/}
+      {/*    {" "}*/}
+      {/*    <img src={Facebook} alt="Facebook" />*/}
+      {/*  </a>*/}
+      {/*  <a href="https://www.linkedin.com//">*/}
+      {/*    <img src={LinkedId} alt="LinkedId" />*/}
+      {/*  </a>*/}
+      {/*  <a href="https://twitter.com/">*/}
+      {/*    <img src={Twitter} alt="Twitter" />*/}
+      {/*  </a>*/}
+      {/*  <a href="https://www.instagram.com/">*/}
+      {/*    <img src={Instagram} alt="Instagram" />*/}
+      {/*  </a>*/}
+      {/*</Icons>*/}
       <Form>
         <Row>
-          <input name="name" type="text" placeholder="your name" />
-          <input
-            name="email"
-            type="email"
-            placeholder="enter working email id"
-          />
+          <input name="name" type="text" placeholder="your name" onChange={(e) => setName(e.target.value)} />
+          <input name="email" type="email" placeholder="enter working email id" onChange={(e) => setMail(e.target.value)} />
         </Row>
         <textarea
           name=""
@@ -159,13 +171,13 @@ const Contact = () => {
           cols="30"
           rows="2"
           placeholder="your message"
-        ></textarea>
+          onChange={(e) => setMessage(e.target.value)}
+        />
         <div style={{ margin: "0 auto" }}>
-          <button
-            onClick={(e) => {
-              e.preventDefault();
-            }}
-          >
+          <button onClick={(e) => {
+            e.preventDefault();
+            submitMessage();
+          }}>
             Submit
           </button>
         </div>
