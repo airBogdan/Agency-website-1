@@ -73,5 +73,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-//© 2021 by CodeBucks. Design by @CodeBucks.
